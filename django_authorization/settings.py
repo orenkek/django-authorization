@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'django_urls.apps.DjangoUrlsConfig',
+    'django_authenticate.apps.DjangoAuthenticateConfig',
 ]
 
 MIDDLEWARE = [
