@@ -1,6 +1,7 @@
-from django.urls import path
-from django_urls.views import index
+from django.urls import path, include
+from django_urls.views import index, IndexView
 
 urlpatterns = [
-    path('', index, name='index')
+    path('', IndexView.as_view(), name='index'),
+    path('accounts/', include('django.contrib.auth.urls'))
 ]
